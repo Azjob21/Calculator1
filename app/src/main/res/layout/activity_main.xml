@@ -10,10 +10,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_weight="1"
+        android:id="@+id/tvShowNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="#333A73"
         android:gravity="right"
         android:paddingTop="10pt"
@@ -26,7 +26,8 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0">
+        android:layout_weight="0"
+        android:background="#333A73">
 
 
         <TableRow
@@ -40,43 +41,46 @@
                 android:layout_weight="1"
                 android:insetLeft="5dp"
                 android:insetRight="5dp"
+                android:onClick="buClear"
                 android:text="AC"
                 android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp"
-               />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textColor="#FF000000"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="+/-"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textColor="#FF000000"
                 android:insetRight="5dp"
+                android:onClick="buOperation"
                 android:text="%"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
-                android:id="@+id/bu4"
+                android:id="@+id/budiv"
                 android:layout_width="122dp"
                 android:layout_height="80dp"
                 android:insetRight="5dp"
-                android:textColor="#FF000000"
+                android:onClick="buOperation"
                 android:text="/"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
         </TableRow>
 
@@ -91,9 +95,10 @@
                 android:layout_weight="1"
                 android:insetLeft="5dp"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="7"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu6"
@@ -101,9 +106,10 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="8"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu7"
@@ -111,19 +117,21 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="9"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
-                android:id="@+id/bu8"
+                android:id="@+id/bumul"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:insetRight="5dp"
-                android:textColor="#FF000000"
+                android:onClick="buOperation"
                 android:text="*"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
         </TableRow>
 
         <TableRow
@@ -137,9 +145,10 @@
                 android:layout_weight="1"
                 android:insetLeft="5dp"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="4"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu10"
@@ -147,9 +156,10 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="5"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu11"
@@ -157,19 +167,21 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="6"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
-                android:id="@+id/bu12"
+                android:id="@+id/buminus"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textColor="#FF000000"
                 android:insetRight="5dp"
+                android:onClick="buOperation"
                 android:text="-"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
         </TableRow>
 
         <TableRow
@@ -183,9 +195,10 @@
                 android:layout_weight="1"
                 android:insetLeft="5dp"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="1"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu14"
@@ -193,9 +206,10 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="2"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
                 android:id="@+id/bu15"
@@ -203,19 +217,21 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:insetRight="5dp"
+                android:onClick="BuNumEvent"
                 android:text="3"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
 
             <Button
-                android:id="@+id/bu16"
+                android:id="@+id/buplus"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textColor="#FF000000"
                 android:insetRight="5dp"
+                android:onClick="buOperation"
                 android:text="+"
+                android:textColor="#FF000000"
                 android:textSize="20sp"
-                app:cornerRadius="15dp" />
+                app:cornerRadius="5dp" />
         </TableRow>
     </TableLayout>
 
@@ -223,6 +239,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
+        android:background="#333A73"
         android:orientation="horizontal">
 
         <Button
@@ -233,9 +250,10 @@
             android:layout_weight="1"
             android:insetLeft="5dp"
             android:insetRight="5dp"
+            android:onClick="BuNumEvent"
             android:text="0"
             android:textSize="20sp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="5dp" />
 
         <Button
             android:id="@+id/bu18"
@@ -243,9 +261,10 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:insetRight="5dp"
+            android:onClick="BuNumEvent"
             android:text="."
             android:textSize="20sp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="5dp" />
 
         <Button
             android:id="@+id/bu19"
@@ -253,10 +272,11 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:insetRight="5dp"
+            android:onClick="buEqualEvent"
             android:text="="
             android:textColor="#FF000000"
             android:textSize="20sp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="5dp" />
 
     </LinearLayout>
 
